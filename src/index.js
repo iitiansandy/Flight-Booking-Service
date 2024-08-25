@@ -14,6 +14,8 @@ app.use(bodyParser.text());
 
 app.use('/api', apiRoutes);
 
+// app.use('/bookingService/api', apiRoutes);
+
 app.listen(ServerConfig.PORT, () => {
     console.log(`Successfully started the server on PORT : ${ServerConfig.PORT}`);
     Crons();
